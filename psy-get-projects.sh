@@ -1237,7 +1237,7 @@ function psy_get_projects() {
 								Host github.com
 								  HostName github.com
 								  User git
-								  IdentityFile ~/.ssh/psy_git
+								  IdentityFile ~/.ssh/psy-git
 								  StrictHostKeyChecking no
 
 							EOF
@@ -1271,7 +1271,7 @@ function psy_get_projects() {
 						fi
 					}
 
-					[[ -f "${pgp__path_ssh_key_file}" ]] || throw_error "SSH key \"psy_git\" not found"
+					[[ -f "${pgp__path_ssh_key_file}" ]] || throw_error "SSH key \"psy-git\" not found"
 				}
 			}
 
@@ -1424,6 +1424,7 @@ function psy_get_projects() {
 				"psy-dev-utilities"
 				"bootstrap-ved"
 				"virtual-env-docker"
+				"psy-translator"
 			)
 
 			aarr_psy_projects_alias=(
@@ -1432,6 +1433,7 @@ function psy_get_projects() {
 				["psy-dev-utilities"]="dev"
 				["bootstrap-ved"]="boot"
 				["virtual-env-docker"]="ved"
+				["psy-translator"]="tra"
 			)
 
 			aarr_psy_projects_owner=(
@@ -1441,6 +1443,7 @@ function psy_get_projects() {
 				["psy-dev-utilities"]="psy-projects-bash"
 				["bootstrap-ved"]="psy-projects-bash"
 				["virtual-env-docker"]="psy-projects-docker"
+				["psy-translator"]="psy-projects-bash"
 			)
 		}
 
