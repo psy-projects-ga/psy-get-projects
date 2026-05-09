@@ -1328,7 +1328,7 @@ function psy_get_projects() {
 			{ #setting-variables
 				pgp__path_core_default_directory="${HOME}/.cache/psy/bash-projects/lib"
 				pgp__path_psy_projects_directory="$(pgp__normalize_path "${directory}")"
-				pgp__path_ssh_key_file="${HOME}/.ssh/psy_git"
+				pgp__path_ssh_key_file="${HOME}/.ssh/psy-git"
 
 				set_pgp__project
 				set_pgp__token
